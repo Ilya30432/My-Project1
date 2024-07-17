@@ -1,0 +1,27 @@
+@font-face {
+    font-family:  'Open Sans';
+    src: url('./OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:  'Open Sans';
+    src: url('./OpenSans-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family:  'Poppins';
+    src: url('./Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family:  'Poppins';
+    src: url('./Poppins-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family:  'Poppins';
+    src: url('./Poppins-Medium.ttf');
+    font-weight: 500;
+}
