@@ -2,6 +2,8 @@ import Button from "../../componets/Button/Button";
 import "./Home.css";
 import logo from "./logo.svg";
 import homeRoom from "./home-room.png";
+import sofa from"./sofa.png";
+import lisa from"./lisa.png";
 import svgEre from "./ere.svg";
 import svgSd from "./sd.svg";
 import svgSr from "./sr.svg";
@@ -15,19 +17,19 @@ function Home() {
       title: "Interior Design",
       text: "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmodtempor incididunt ut labore.",
       img: svgSr,
-      id:0,
+      id: 0,
     },
     {
       title: "Architecture",
       text: "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmodtempor incididunt ut labore.",
       img: svgEre,
-      id:1,
+      id: 1,
     },
     {
       title: "Planning",
       text: "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmodtempor incididunt ut labore.",
       img: svgSd,
-      id:2,
+      id: 2,
     },
   ];
 
@@ -46,19 +48,19 @@ function Home() {
           <Button className="header-btn" text="Sign Up" />
         </ul>
       </header>
-      <main>
-        <div className="main container">
-          <div className="info">
-            <p className="info-words">MODERN INTERIOR</p>
-            <h2 className="info-title">Create Your Interior Design.</h2>
-            <p className="info-text">
+      <main className="main">
+        <div className="main-contact container">
+          <div className="contact">
+            <p className="contact-words">MODERN INTERIOR</p>
+            <h2 className="contact-title">Create Your Interior Design.</h2>
+            <p className="contact-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation.
             </p>
-            <Button className="info-btn" text="CONTACT" />
+            <Button className="contact-btn" text="CONTACT" />
           </div>
-          <div className="img-container">
+          <div className="contact-img">
             <img src={homeRoom} alt="img" />
           </div>
         </div>
@@ -67,7 +69,39 @@ function Home() {
             <p className="card-service__text">WHAT WE DO</p>
             <h3 className="card-service__title">Our Service</h3>
           </div>
-          <Slider className="card-container" data = {sliderData} />
+          <Slider className="card-container" data={sliderData} />
+        </div>
+        <div className="main-about container">
+          <div className="about-img">
+            <img src={sofa} alt="img" />
+          </div>
+          <div className="about">
+            <p className="about-words">ABOUT US</p>
+            <h2 className="about-title">
+              Interioris The Will of An Epoch Mextreo
+            </h2>
+            <p className="about-text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form injected
+              humour, or randomised words which don't look even slightly
+              believable.If you are going to use a passage of Lorem Ipsum, sure
+              there isn't anything embarrassing hidden the middleof text. All
+              the Lorem Ipsum generators on the Internettend to repeat
+              predefined chunks as necessary,making this the first true
+              generator on the Internet.
+            </p>
+            <Button className="about-btn" text="LEARN MORE" />
+          </div>
+        </div>
+        <div className="main-info container">
+          <div className="info">
+            <h2 className="info-number">20</h2>
+            <p className="info-text">Years Of Successful Working<br/> The Market</p>
+            <Button className="about-btn" text="LEARN MORE" />
+          </div>
+          <div className="info-img">
+            <img src={lisa} alt="img" />
+          </div>
         </div>
       </main>
     </div>
