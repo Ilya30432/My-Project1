@@ -1,12 +1,12 @@
 @import url("../../fonts/Fonts.css");
 
-.container {
-  padding: 0 30px;
-  margin: 0 100px;
-}
-
 .wrapper {
   min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 100px;
   padding: 0 20px;
 }
 
@@ -310,5 +310,86 @@
   height: 100%;
   border: 3px solid #b0855b;
   border-radius: 70px 0 70px 0;
+  z-index: -1;
+}
+
+.main-client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 110px;
+  gap: 50px;
+  position: relative;
+  padding-top: 100px;
+}
+
+.main-client::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Компенсирует  родительского элемента */
+  left: -100px; /* Компенсирует  родительского элемента */
+  right: -100px; /* Компенсирует  родительского элемента */
+  bottom: -20px; /* Компенсирует  родительского элемента */
+  z-index: -1;
+  background-color: #f8f8f8;
+}
+.client-title {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.client-info {
+  display: flex;
+  gap: 170px;
+  text-align: center;
+}
+
+.client-box {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 40px 0 40px 0;
+  box-shadow: 0px 13px 16px 0px #0000001a;
+}
+
+.client-number {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.client-text {
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #646464;
+  margin-top: 5px;
+}
+
+.client-box:nth-child(2),
+.client-box:nth-child(4) {
+  position: relative;
+  top: 90px;
+}
+
+.client-svg__one {
+  position: absolute;
+  width: 200px;
+  bottom: 80px;
+  left: 190px;
+  z-index: -1;
+}
+
+.client-svg__two {
+  position: absolute;
+  bottom: 60px;
+  left: 160px;
+  z-index: -1;
+}
+
+.client-svg__three {
+  position: absolute;
+  right: 180px;
+  bottom: 80px;
   z-index: -1;
 }

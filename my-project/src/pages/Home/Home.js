@@ -2,11 +2,13 @@ import Button from "../../componets/Button/Button";
 import "./Home.css";
 import logo from "./logo.svg";
 import homeRoom from "./home-room.png";
-import sofa from"./sofa.png";
-import lisa from"./lisa.png";
+import sofa from "./sofa.png";
+import lisa from "./lisa.png";
 import svgEre from "./ere.svg";
 import svgSd from "./sd.svg";
 import svgSr from "./sr.svg";
+import vectorOne from "./vector1.svg";
+import vectorTwo from "./vector2.svg";
 import React from "react";
 import "../../fonts/Fonts.css";
 import Slider from "../../componets/Slider/Slider";
@@ -96,11 +98,41 @@ function Home() {
         <div className="main-info container">
           <div className="info">
             <h2 className="info-number">20</h2>
-            <p className="info-text">Years Of Successful Working<br/> The Market</p>
+            <p className="info-text">
+              Years Of Successful Working
+              <br /> The Market
+            </p>
             <Button className="about-btn" text="LEARN MORE" />
           </div>
           <div className="info-img">
             <img src={lisa} alt="img" />
+          </div>
+        </div>
+        <div className="main-client container">
+          <div className="client-title">
+            <p>3000+ Completed Work</p> 
+            <p>Which WE have Successfully Done</p>
+          </div>
+          <div className="client-info">
+            <div className="client-box">
+              <p className="client-number">980</p>
+              <p className="client-text">Project</p>
+              <img className="client-svg__one" src={vectorOne} alt="svg"/>
+            </div>
+            <div className="client-box">
+            <p className="client-number">520</p>
+            <p className="client-text">Happy Client</p>
+            <img className="client-svg__two" src={vectorTwo} alt="svg"/>
+            </div>
+            <div className="client-box">
+            <p className="client-number">330</p>
+            <p className="client-text">Winners</p>
+            <img className="client-svg__three" src={vectorOne} alt="svg"/>
+            </div>
+            <div className="client-box">
+            <p className="client-number">120</p>
+            <p className="client-text">Recoment</p>
+            </div>
           </div>
         </div>
       </main>
