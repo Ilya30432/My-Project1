@@ -274,7 +274,7 @@
   font-family: "Open Sans";
   font-size: 300px;
   font-weight: 600;
-  background: url("./tree.png");
+  background: url("./img/tree.png");
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -329,7 +329,7 @@
   top: -20px; /* Компенсирует  родительского элемента */
   left: -100px; /* Компенсирует  родительского элемента */
   right: -100px; /* Компенсирует  родительского элемента */
-  bottom: -20px; /* Компенсирует  родительского элемента */
+  bottom: 0; /* Компенсирует  родительского элемента */
   z-index: -1;
   background-color: #f8f8f8;
 }
@@ -392,4 +392,87 @@
   right: 180px;
   bottom: 80px;
   z-index: -1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.activ-slider {
+  transition: 0.3s;
+}
+
+.main-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.testimonials-text {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #646464;
+}
+
+.testimonials-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 40px;
+  color: #212121;
+  margin-bottom: 70px;
+}
+
+.testimonials-box {
+  background-color: white;
+  border-radius: 70px 0 70px 0;
+  box-shadow: 7px 7px 30px 5px #42605426;
+}
+
+.testimonials-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px 20px 80px;
+  width: 500px;
+  height: 150px;
+}
+
+.testimonials-box__img {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 30px 0 30px 0;
+}
+
+.testimonials-box__first-words{
+  color: black;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.testimonials-box__rest{
+  margin-left: 4px;
+  color: #646464;
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.testimonials-box__quotes{
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  width: 35px;
+  height: 35px;
+  color: #b0855b;
+}
+
+.arrow{
+  top: 160px;
 }
