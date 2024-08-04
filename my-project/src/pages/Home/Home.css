@@ -476,3 +476,9 @@
 .arrow{
   top: 160px;
 }
+
+
+.testimonials-container{
+  display: flex;
+  gap: 130px;
+}
