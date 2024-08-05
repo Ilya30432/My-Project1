@@ -11,13 +11,16 @@ import vectorOne from "./img/vector1.svg";
 import vectorTwo from "./img/vector2.svg";
 import peopleMen from "./img/people-men.png"
 import peopleWomen from "./img/people-women.png"
+import cardImgOne from "./img/card-img1.png"
+import cardImgTwo from "./img/card-img2.png"
 import React from "react";
 import "../../fonts/Fonts.css";
 import Slider from "../../componets/Slider/Slider";
 import Swiper from "../../componets/Swiper/Swiper";
+import Card from "./componets/Card/Card";
 
 function Home() {
-  const sliderData = [
+  const sliderData = [ // Можно заменить на api запросы
     {
       title: "Interior Design",
       text: "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmodtempor incididunt ut labore.",
@@ -38,7 +41,7 @@ function Home() {
     },
   ];
 
-  const swiperData = [
+  const swiperData = [ // Можно заменить на api запросы
     {
       name: "Louis Saville /CEO at Google inc",
       text: "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmodtempor incididunt ut labore.",
@@ -64,6 +67,21 @@ function Home() {
       img: peopleWomen,
     },
   ];
+
+  const cardData = [
+    {
+      img: cardImgOne,
+      title: "2020 Interior Design Trends",
+      text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.",
+      id: 0,
+    },
+    {
+      img: cardImgTwo,
+      title: "28 Notable Product at ARC Interior Design",
+      text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.",
+      id: 1,
+    }
+  ]
 
   return (
     <div className="wrapper">
@@ -169,6 +187,11 @@ function Home() {
           <p className="testimonials-text">TESTIMONIALS</p>
           <h2 className="testimonials-title">Client says about us</h2>
           <Swiper data= {swiperData} className="testimonials-box"/>
+        </div>
+        <div className="main-blog container">
+        <p className="blog-text">LETEST NEWS</p>
+        <h2 className="blog-title">From Our Blog</h2>
+        <Card data= {cardData}  />
         </div>
       </main>
     </div>

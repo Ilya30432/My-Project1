@@ -42,7 +42,7 @@ function Swiper({ data , className}) {
           <span className="testimonials-box__rest">{restText}</span>
           </p>
           <p className="testimonials-box__text">{data.text}</p>
-          <img className= "testimonials-box__img"src={data.img} />
+          <img alt="img-avatar" className="testimonials-box__img"src={data.img} />
           <RiDoubleQuotesR  className="testimonials-box__quotes"/>
         </div>
         );
