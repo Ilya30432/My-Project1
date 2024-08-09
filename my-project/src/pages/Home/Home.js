@@ -193,6 +193,15 @@ function Home() {
         <h2 className="blog-title">From Our Blog</h2>
         <Card data= {cardData}  />
         </div>
+        <div className="main-footer container">
+        <h2 className="main-footer__title">DON’T FORGET TO SIGN UP</h2>
+        <span className="main-footer__span"></span>
+        <p className="main-footer__text">Find out early about all upcoming promotions and new product releases with our newsletter.</p>
+        <div className="main-footer__box">
+        <input className="main-footer__input" type="email" placeholder="Enter your email address....." />
+        <button className="main-footer__btn">SUBSCRIBE</button>
+        </div>
+        </div>
       </main>
     </div>
   );
