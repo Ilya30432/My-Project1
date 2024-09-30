@@ -91,7 +91,8 @@ function Home() {
 
   return (
     <div className="wrapper">
-      <header className="header container">
+      <header>
+        <div className="header-box container">
         <img src={logo} alt="logo" className="header-img" />
         <ul className="header-menu">
           <li className="header-menu-list">HOME</li>
@@ -103,6 +104,7 @@ function Home() {
           <li className="header-menu-list">CONTACT</li>
           <Button className="header-btn" text="Sign Up" />
         </ul>
+        </div>
       </header>
       <main className="main">
         <div className="main-contact container">
@@ -120,7 +122,7 @@ function Home() {
             <img src={homeRoom} alt="img" />
           </div>
         </div>
-        <div className="card container">
+        <div className="main-card container">
           <div className="card-service">
             <p className="card-service__text">WHAT WE DO</p>
             <h3 className="card-service__title">Our Service</h3>

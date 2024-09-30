@@ -6,14 +6,18 @@
 }
 
 .container {
-  margin: 0 100px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
-.header {
+/* HEADER */
+
+.header-box {
   display: flex;
   padding-top: 20px;
-  gap: 200px;
+  gap: 400px;
+  justify-content: space-between;
+  max-width: 1400px;
 }
 
 .header-menu {
@@ -38,47 +42,56 @@
   border-radius: 15px 0 15px 0;
 }
 
+/* MAIN */
+
 .main-contact {
   display: flex;
   align-items: center;
-  gap: 100px;
   padding-top: 40px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  max-width: 1400px;
 }
 
 .contact {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .contact-words {
   font-family: "Open Sans";
   font-weight: 600;
+  color: #646464;
+  font-size: 20px;
+  line-height: 27.24px;
 }
 
 .contact-title {
   font-family: "Popins";
   font-weight: 600;
-  font-size: 50px;
-  max-width: 420px;
+  font-size: 72px;
+  max-width: 549px;
+  line-height: 78px;
 }
 
 .contact-text {
   font-family: "Open Sans";
   font-weight: 400;
   line-height: 30px;
+  font-size: 20px;
 }
 
 .contact-btn {
   color: white;
   background-color: #37806b;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   font-family: "Open Sans";
   padding: 10px;
   border-radius: 15px 0 15px 0;
-  max-width: 100px;
+  max-width: 142px;
 }
 
 .contact-img {
@@ -87,7 +100,7 @@
 }
 
 .contact-img > img {
-  width: 400px;
+  width: 700px;
   border-radius: 70px 0 70px 0;
   display: block;
 }
@@ -104,37 +117,42 @@
   z-index: -1;
 }
 
-.card {
+/* CARD MAIN */
+
+.main-card {
   display: flex;
   flex-direction: column;
   padding-top: 40px;
-  gap: 30px;
+  gap: 50px;
   position: relative;
+  max-width: 1400px;
 }
 
 .card-service__text {
   font-family: "Popins";
   font-weight: 600;
   color: #646464;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .card-service__title {
   font-family: "Popins";
   font-weight: 500;
-  font-size: 40px;
+  font-size: 48px;
+  line-height: 78px;
 }
 
 .card-container {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .arrow-left {
   color: #646464;
   position: absolute;
   right: 100px;
-  top: 80px;
+  top: 130px;
   width: 40px;
   height: 30px;
   box-shadow: -1px 3px 10px 0px #0000004d;
@@ -148,7 +166,7 @@
   right: 40px;
   background: #37806b;
   box-shadow: -1px 3px 10px 0px #0000004d;
-  top: 80px;
+  top: 130px;
   width: 40px;
   height: 30px;
   border-radius: 30px;
@@ -175,8 +193,9 @@
 .card-container__title {
   font-family: "Open Sans";
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   grid-column: 2;
+  padding-bottom: 10px;
 }
 
 .card-container__text {
