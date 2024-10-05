@@ -256,7 +256,7 @@ function Home() {
             </div>
             <div className="footer-company">
               <h4 className="footer-company__title">Company</h4>
-              <ul className="footer-company__list">
+              <ul className="footer-nav__list">
                 <li>About Company</li>
                 <li>Our Testimonials</li>
                 <li>Latest News</li>
@@ -266,7 +266,7 @@ function Home() {
             </div>
             <div className="footer-contact">
               <h4 className="footer-contact__title">Contact us</h4>
-              <ul className="footer-contact__list">
+              <ul className="footer-nav__list">
                 <li>Sagrada Familia,Herba</li>
                 <li>Street Front USA</li>
                 <li>brandoxide@gmail.com</li>
